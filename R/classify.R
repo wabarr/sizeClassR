@@ -16,9 +16,9 @@ classify <- function(sizes, method="Brain") {
   if(mean(sizes, na.rm=TRUE)>5000){
     warning("Are you sure your units are in kg? Please double check. This appears to be a mightly large group of animals!")
   }
-  maxima <- c(0,18,80,350,1000,180000)
+  cutpoints <- c(0,18,80,350,1000,180000)
   ##note: upper limit from body mass of blue whale
-  classes <- cut(sizes, breaks=maxima, labels = FALSE, include.lowest = TRUE, right=TRUE)
+  classes <- cut(sizes, breaks=cutpoints, labels = FALSE)
   return(classes)
 }
 
