@@ -1,0 +1,11 @@
+Package: sizeClassR
+Type: Package
+Title: Categorizes continuous body masses into standard categorical size classes
+Version: 0.1.0
+Author: W. Andrew Barr
+Maintainer: W. Andrew Barr <wabarr@email.gwu.edu>
+Description: Categorizes continuous body masses into standard categorical size classes
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
