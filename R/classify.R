@@ -8,9 +8,9 @@
 #'
 #' @examples
 #' x <- runif(10, min=10, max=1500)
-#'x[11] <- NA
-#'x[12] <- 80
-#'classify(x)
+#' x[11] <- NA
+#' x[12] <- 80
+#' classify(x)
 
 classify <- function(sizes, method="Brain") {
   if(mean(sizes, na.rm=TRUE)>5000){
