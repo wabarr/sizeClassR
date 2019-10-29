@@ -4,7 +4,7 @@
 \alias{classify}
 \title{Classify body masses into size classes}
 \usage{
-classify(sizes, method = "Brain")
+classify(sizes, method)
 }
 \arguments{
 \item{sizes}{vector of body sizes to classify, units are assumed to be kg}
@@ -18,5 +18,5 @@ Classify body masses into size classes
 x <- runif(10, min=10, max=1500)
 x[11] <- NA
 x[12] <- 80
-classify(x)
+classify(x, method="Brain")
 }
